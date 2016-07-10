@@ -1,0 +1,275 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 6, 2016, 9:35:03 PM
+    Author     : Chandan D Nadig
+*/
+
+html{
+    height: 100% !important;
+    font-size: 0.8rem;
+}
+
+body, .circle::before{
+    background-color: #EEEEEE;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg1.jpg', sizingMethod='scale')";
+}
+
+audio{
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+/*** Check Boxes ***/
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* Unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 0.625rem; } /* space between Checkbox and Label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* Checked icon */ 
+input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* allow space for check mark */
+
+/*Modal*/
+.modal-header, .modal-footer{
+    padding: 10px;
+}
+.modal-header{
+    color: #FFFFFF;
+    background-color: #2b569a;
+}
+
+.modal-body .row{
+  display: table;
+}
+
+.modal {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-text{
+    display: table-cell; 
+    vertical-align: middle;
+}
+/*End of Modal*/
+
+/*Pad*/
+.pad{
+    padding: 1.25rem;
+    height: 100% !important;
+    border-radius: 0.24rem;
+    -webkit-border-radius: 0.24rem;
+    -moz-border-radius: 0.24rem;
+    background-color: #009688;
+    margin: 4rem 0.78rem 1rem 1.56rem;
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.8), /*bottom external highlight*/
+                0 -1px 1px #999, /*top external shadow*/ 
+                inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+                inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.8), /*bottom external highlight*/
+                0 -1px 1px #999, /*top external shadow*/ 
+                inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+                inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+    box-shadow: 0 2px 3px rgba(0,0,0,0.8), /*bottom external highlight*/
+                0 -1px 1px #999, /*top external shadow*/ 
+                inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+                inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+}
+/*End of Pad*/
+
+/*Paper*/
+.paper{
+    font-size: 1rem; /* Set for em computation */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: -0.05rem 0.05rem #4d525d;
+    -moz-box-shadow: -0.05rem 0.05rem #4d525d;
+    box-shadow: -0.05rem 0.05rem #4d525d;
+}
+
+.paper:last-child {
+    margin-bottom: 0;
+}
+
+.paper:after {
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: 50;
+    border-top: solid 1.6rem #DDDDDD;
+    border-right: solid 1.6rem #009688;
+    border-bottom: solid 1.6rem #009688;
+    border-left: solid 1.6rem #DDDDDD;
+    -webkit-box-shadow: -0.08rem 0.08rem 0.4rem #212835;
+    -moz-box-shadow: -0.08rem 0.08rem 0.4rem #212835;
+    box-shadow: -0.08rem 0.08rem 0.4rem #212835;
+}
+/*End of Paper*/
+
+/*Header*/
+.header{
+    height: 6em;
+    color: #FFFFFF;
+    position: relative;
+    background-color: #2B569A;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    width: 78%;
+    text-align: right;
+    font-family:"lucida calligraphy",arial,'sans serif'; 
+}
+/*End of Header*/
+
+.avatar{
+    z-index: 100;
+    position: absolute;
+    top: 3em;
+    right: 1em;
+    width: 6em;
+    height: 6em;
+    overflow: hidden;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(0,0,0,0.3);
+    -webkit-box-shadow: -0.1rem 0.1rem 0.3rem #212835; 
+    -moz-box-shadow: -0.1rem 0.1rem 0.3rem #212835; 
+    box-shadow: -0.1rem 0.1rem 0.3rem #212835; 
+}
+
+.avatar img{
+    height: auto;
+    width: 100%;
+}
+
+/*Progress Bar*/
+.completion{
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+    color: grey;
+}
+/*End of Progress Bar*/
+
+/*Clip*/
+.clip, .circle{
+    position: relative;
+    font-size: 1rem;
+}
+
+.clip::after, .clip::before, circle:after, .circle:before{
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.clip:before{
+    z-index: 50;
+    top: 0.975em;
+    left: 6.958em;
+    width: 29em;
+    border-bottom: solid 4rem #4d525d;
+    border-left: solid 11.5em transparent;
+    border-right: solid 11.5em transparent;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+
+}
+
+.clip:after{
+    top: 4.7em;
+    left: 6.958em;
+    width: 29em;
+    z-index: 50;
+    border-bottom: solid 3.5em #4d525d;
+
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    -webkit-box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.75);
+}
+
+.circle{
+    position: absolute;
+    z-index: 60;
+    top: 0.4rem;
+    left: 15.6rem;
+    width: 12rem;
+    height: 7rem;
+    background: #4d525d;
+    border-radius: 50%;
+}
+
+.circle::before{
+    z-index: 60;
+    top: 1rem;
+    left: 4.2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    /*background: white;*/
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.55);
+    -webkit-box-shadow: inset 0px 0px 16px -1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 16px -1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 16px -1px rgba(0,0,0,1);
+}
+/*End of Clip*/
+
+/*Content*/
+.content{
+    width: 100%;
+    height: 100%;
+    margin: 1.2rem 0;
+}
+
+.list::-webkit-scrollbar { 
+    display: none; 
+    z-index: -1;
+}
+
+.list{
+    padding: 0.5rem 1.3rem;
+    height: 65vh;
+    width: calc(100% + 20px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list-group-item{
+    padding: 0.25rem 0;
+    border-color: transparent;
+}
+
+.gold{color: #FFDB19}
+/*End of Content*/
