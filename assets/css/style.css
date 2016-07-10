@@ -15,7 +15,7 @@ html{
 
 body, .circle::before{
     background-color: #EEEEEE;
-    background-image: url("../images/bg1.jpg");
+    background-image: url(''../images/bg1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -23,6 +23,9 @@ body, .circle::before{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg1.jpg', sizingMethod='scale')";
 }
 
 audio{
