@@ -102,6 +102,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     width: 100%;
     overflow: hidden;
     position: relative;
+    border-color: transparent;
     background-color: #FFFFFF;
 }
 
