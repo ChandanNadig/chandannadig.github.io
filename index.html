@@ -55,6 +55,10 @@ and open the template in the editor.
                 $('#ok , #close').click(function(e) {
                     aid.trigger('play');
                 });
+                
+                $('#myModal').on('hidden.bs.modal', function() {
+                    aid.trigger('play');
+                });
             });
 
             $(document).on('keyup', function(evt) {
