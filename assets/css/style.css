@@ -101,7 +101,8 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     font-size: 0.8rem; /* Set for em computation */
     height: 100%;
     width: 100%;
-    position: relative;
+    position: relative
+    overflow: hidden;
     border-color: transparent;
     background-color: #FFFFFF;
 }
@@ -119,7 +120,6 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     bottom: 0;
     content: "";
     z-index: 50;
-    overflow: hidden;
     border-top: solid 1.5em #DDDDDD;
     border-right: solid 1.5em #009688;
     border-bottom: solid 1.5em #009688;
