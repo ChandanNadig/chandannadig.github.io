@@ -101,7 +101,6 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     font-size: 0.8rem; /* Set for em computation */
     height: 100%;
     width: 100%;
-    overflow: hidden;
     position: relative;
     border-color: transparent;
     background-color: #FFFFFF;
@@ -181,10 +180,9 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 .me-col, .her-col{
     font-size: 0.8rem;
 }
-.clip{
-    font-size: 1em;
-}
+
 .clip, .circle{
+    /*font-size: 1em;*/
     position: relative;
 }
 
@@ -254,6 +252,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     width: 100%;
     height: 100%;
     margin: 1.2rem 0;
+    overflow: hidden;
 }
 
 .list::-webkit-scrollbar { 
