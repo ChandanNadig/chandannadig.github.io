@@ -11,6 +11,7 @@ and open the template in the editor.
 html{
     height: 100% !important;
     font-size: 0.8rem;
+    top:0; left:0; bottom: 0; right:0;
 }
 
 body, .circle::before{
@@ -190,7 +191,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 
 .clip:before{
     z-index: 50;
-    top: 0.75em;
+    top: 15%;
     left: 20%;
     width: 60%;
     border-bottom: solid 3.5em #4d525d;
