@@ -142,7 +142,6 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     bottom: 0;
     width: 75%;
     text-align: right;
-    font-size: 1em;
     font-family:"lucida calligraphy",arial,'sans serif'; 
 }
 /*End of Header*/
