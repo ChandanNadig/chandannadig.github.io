@@ -196,12 +196,12 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 
 .clip:before{
     z-index: 50;
-    top: 0.75em;
+    top: 1em;
     left: 20%;
     width: 60%;
     border-bottom: solid 5em #4d525d;
-    border-left: solid 9.5em transparent;
-    border-right: solid 9.5em transparent;
+    border-left: solid 12em transparent;
+    border-right: solid 12em transparent;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 
