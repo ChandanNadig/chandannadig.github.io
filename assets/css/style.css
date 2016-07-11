@@ -9,9 +9,12 @@ and open the template in the editor.
 */
 
 html{
-    height: 100% !important;
-    font-size: 0.8rem;
-    top:0; left:0; bottom: 0; right:0;
+    top:0; 
+    left:0;  
+    right:0;
+    bottom: 0;
+    height: 100%;
+    font-size: 1rem;
 }
 
 body, .circle::before{
@@ -24,7 +27,7 @@ body, .circle::before{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg', sizingMethod='scale')";
 }
@@ -58,7 +61,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 }
 
 .modal-body .row{
-  display: table;
+    display: table;
 }
 
 .modal {
@@ -82,17 +85,17 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     background-color: #009688;
     margin: 4rem 1.5rem 1rem 1.5rem;
     -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.8), /*bottom external highlight*/
-                0 -1px 1px #999, /*top external shadow*/ 
-                inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
-                inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+        0 -1px 1px #999, /*top external shadow*/ 
+        inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+        inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
     -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.8), /*bottom external highlight*/
-                0 -1px 1px #999, /*top external shadow*/ 
-                inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
-                inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+        0 -1px 1px #999, /*top external shadow*/ 
+        inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+        inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
     box-shadow: 0 2px 3px rgba(0,0,0,0.8), /*bottom external highlight*/
-                0 -1px 1px #999, /*top external shadow*/ 
-                inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
-                inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+        0 -1px 1px #999, /*top external shadow*/ 
+        inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+        inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
 }
 /*End of Pad*/
 
@@ -178,10 +181,6 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 /*End of Progress Bar*/
 
 /*Clip*/
-.me-col, .her-col{
-    font-size: 1rem;
-}
-
 .clip, .circle{
     position: relative;
 }
@@ -196,6 +195,10 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     z-index: 50;
     left: 20%;
     width: 60%;
+    top: 1.25em;
+    border-bottom: solid 3em #4d525d;
+    border-left: solid 8em transparent;
+    border-right: solid 8em transparent;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
@@ -204,6 +207,8 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     z-index: 50;
     left: 20%;
     width: 60%;
+    top: 4em;
+    border-bottom: solid 3em #4d525d;
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
     border-bottom-left-radius: 0.5em;
@@ -217,80 +222,27 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     position: absolute;
     z-index: 60;
     top: 0.25em;
-    left: 43.5%;
-    width: 12.5%;
+    left: 42%;
+    width: 16%;
     height: 5em;
     background: #4d525d;
+    /*background: orange;*/
     border-radius: 50%;
 }
 
 .circle::before{
     z-index: 60;
     top: 0.85em;
-    left: 17.5%;
-    width: 65%;
-    height: 3em;
+    left: 23%;
+    width: 50%;
+    height: 2.75em;
     border-radius: 50%;
     border: 1px solid rgba(0,0,0,0.55);
+    /*border: 1px solid yellow;*/
     -webkit-box-shadow: inset 0px 0px 16px -1px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 16px -1px rgba(0,0,0,1);
     box-shadow: inset 0px 0px 16px -1px rgba(0,0,0,1);
 }
-
-/* Responsive */
-@media(min-width: 544px) {
-    .clip::before{
-        top: 3px;
-        border-bottom: solid 20px #4d525d;
-        border-left: solid 69.5px transparent;
-        border-right: solid 69.5px transparent;
-    }
-    
-    .clip::after{
-        top: 21.8px;
-        border-bottom: solid 17.2px #4d525d;
-    }
-}
-@media(min-width: 768px) {
-    .clip::before{
-        top: 4.1px;
-        border-bottom: solid 28px #4d525d;
-        border-left: solid 98px transparent;
-        border-right: solid 98px transparent;
-    }
-    
-    .clip::after{
-        top: 30.7px;
-        border-bottom: solid 24.3px #4d525d;
-    }
-}
-@media (min-width: 992px) {
-    .clip::before{
-        top: 5.4px;
-        border-bottom: solid 36.5px #4d525d;
-        border-left: solid 126.5px transparent;
-        border-right: solid 126.5px transparent;
-    }
-    
-    .clip::after{
-        top: 39.7px;
-        border-bottom: solid 31.4px #4d525d;
-    }
-}
-@media (min-width: 1200px) {
-    .clip::before{
-        top: 6.5px;
-        border-bottom: solid 44px #4d525d;
-        border-left: solid 153px transparent;
-        border-right: solid 153px transparent;
-    }
-    
-    .clip::after{
-        top: 48px;
-        border-bottom: solid 38px #4d525d;
-    }
-}
-/*End of Clip*/
 
 /*Content*/
 .content{
@@ -319,3 +271,27 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 
 .gold{color: #FFDB19}
 /*End of Content*/
+
+
+/* Responsive */
+@media(min-width: 544px) {
+    .me-col, .her-col{
+        font-size: 11.3px;
+    }
+}
+@media(min-width: 768px) {
+    .me-col, .her-col{
+        font-size: 16px;
+    }
+}
+@media (min-width: 992px) {
+    .me-col, .her-col{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .me-col, .her-col{
+        font-size: 16px;
+    }
+}
+/*End of Clip*/
