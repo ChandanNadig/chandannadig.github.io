@@ -10,7 +10,7 @@ and open the template in the editor.
 
 html{
     height: 100% !important;
-    font-size: 80%;
+    font-size: 0.8rem;
     top:0; left:0; bottom: 0; right:0;
 }
 
