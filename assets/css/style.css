@@ -101,7 +101,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     font-size: 0.8rem; /* Set for em computation */
     height: 100%;
     width: 100%;
-    position: relative
+    position: relative;
     overflow: hidden;
     border-color: transparent;
     background-color: #FFFFFF;
