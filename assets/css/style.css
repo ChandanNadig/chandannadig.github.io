@@ -144,7 +144,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 .title{
     position: absolute;
     bottom: 0;
-    /*width: 75%;*/
+    width: 75%;
     text-align: right;
     font-family:"lucida calligraphy",arial,'sans serif'; 
 }
