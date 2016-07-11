@@ -199,7 +199,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     top: 0.75em;
     left: 20%;
     width: 60%;
-    border-bottom: solid 3.5em #4d525d;
+    border-bottom: solid 5em #4d525d;
     border-left: solid 9.5em transparent;
     border-right: solid 9.5em transparent;
     border-bottom-left-radius: 0.5em;
@@ -209,10 +209,10 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 
 .clip:after{
     z-index: 50;
-    top: 4em;
+    top: 6em;
     left: 20%;
     width: 60%;
-    border-bottom: solid 3em #4d525d;
+    border-bottom: solid 4em #4d525d;
 
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
