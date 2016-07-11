@@ -178,9 +178,14 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 /*End of Progress Bar*/
 
 /*Clip*/
+.me-col{
+    font-size: 0.8rem;
+}
+.clip{
+    font-size: 1em;
+}
 .clip, .circle{
     position: relative;
-    font-size: 1em;
 }
 
 .clip::after, .clip::before, .circle:after, .circle:before{
