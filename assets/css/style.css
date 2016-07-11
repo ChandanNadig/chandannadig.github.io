@@ -1,4 +1,4 @@
-c/*
+/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -74,7 +74,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 /*Pad*/
 .pad{
     padding: 1rem;
-    height: 100% !important;
+    height: 100%;
     border-radius: 0.24rem;
     -webkit-border-radius: 0.24rem;
     -moz-border-radius: 0.24rem;
@@ -113,16 +113,16 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 .paper:after {
     display: block;
     position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2em;
+    height: 2em;
     right: 0;
     bottom: 0;
     content: "";
     z-index: 50;
-    border-top: solid 1.25rem #DDDDDD;
-    border-right: solid 1.25rem #009688;
-    border-bottom: solid 1.25rem #009688;
-    border-left: solid 1.25rem #DDDDDD;
+    border-top: solid 1em #DDDDDD;
+    border-right: solid 1em #009688;
+    border-bottom: solid 1em #009688;
+    border-left: solid 1em #DDDDDD;
     -webkit-box-shadow: -0.08rem 0.08rem 0.4rem #212835;
     -moz-box-shadow: -0.08rem 0.08rem 0.4rem #212835;
     box-shadow: -0.08rem 0.08rem 0.4rem #212835;
@@ -169,10 +169,10 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 
 /*Progress Bar*/
 .completion{
+    color: grey;
     font-size: 0.8em;
     font-style: italic;
     text-align: left;
-    color: grey;
 }
 /*End of Progress Bar*/
 
