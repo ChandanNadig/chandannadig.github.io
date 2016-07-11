@@ -178,7 +178,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
 
 /*Clip*/
 .me-col, .her-col{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .clip, .circle{
