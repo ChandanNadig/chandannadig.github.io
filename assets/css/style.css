@@ -197,11 +197,35 @@ input[type=checkbox]:checked + label:before { letter-spacing: 0.482rem; } /* all
     left: 20%;
     width: 60%;
     border-bottom: solid 3.5em #4d525d;
-    border-left: solid 12em transparent;
-    border-right: solid 12em transparent;
+    /*border-left: solid 12em transparent;*/
+    /*border-right: solid 12em transparent;*/
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
+}
 
+@media(min-width: 544px) {
+    .clip:before{
+border-left: solid 69.5px transparent;
+border-right: solid 69.5px transparent;
+}
+}
+@media(min-width: 768px) {
+    .clip:before{
+    border-left: solid 98px transparent;
+     border-right: solid 98px transparent;
+    }
+}
+@media (min-width: 992px) {
+    .clip:before{
+    border-left: solid 126.5px transparent;
+    border-right: solid 126.5px transparent;
+    }
+}
+@media (min-width: 1200px) {
+    .clip:before{
+    border-left: solid 153px transparent;
+    border-right: solid 153px transparent;
+}
 }
 
 .clip:after{
