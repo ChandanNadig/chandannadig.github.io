@@ -24,8 +24,8 @@ body, .circle::before{
     -o-background-size: cover;
     background-size: cover;
     
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg1.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg1.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg', sizingMethod='scale')";
 }
 
 audio{
